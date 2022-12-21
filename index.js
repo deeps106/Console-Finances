@@ -145,6 +145,18 @@ for (let i = 0; i < finances.length; i++) {
     console.log(sum);
 }
 
+// Average change:
+// This will be the total divided by array.length:
+
+let Averagechange = sum/finances.length
+
+console.log(Averagechange);
+
+
+// rounding to 2 decimal places
+
+Averagechange2dp = Averagechange.toFixed(2);
+console.log(Averagechange2dp);
 
 // Output of analysis
 
@@ -155,7 +167,7 @@ console.log("Total Months:" + " " + finances.length);
 
 console.log("Total:" + " " + "$" + sum);
 
-console.log("Average  Change:" + " " );
+console.log("Average Change:" + " " + "$" + Averagechange2dp);
 
 console.log("Greatest Increase in Profits:" + " ");
 
