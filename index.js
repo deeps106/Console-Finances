@@ -117,19 +117,30 @@ FirstTwoMonthsTotal = finances[0][1] + finances[1][1];
 console.log(FirstTwoMonthsTotal);
 
 
-for (let i = 0; i < finances.length; i++) {
-    const allNumbersFinances= finances[i][1];
-    console.log(allNumbersFinances);
-
-}
+// for (let i = 0; i < finances.length; i++) {
+//     const allNumbersFinances= finances[i][1];
+//     console.log(allNumbersFinances);
+    
+// }
 
 
 // In order to total up all the numbers I would need to create a loop that iterates through the finances 
 // array targetting the column index[1] and creating a function that would total up these numbers:
+// first create a variable that will display the sum total
+// 
+let sum=0;
 
+for (let i = 0; i < finances.length; i++) {
+    const financeNumbers = finances[i][1];
+    console.log(financeNumbers);
+    
+    sum += financeNumbers
+    
+    console.log(sum);
+}
+console.log("~~~~~~~~");
 
-
-
+console.log("Total:" + " " + "$" + sum);
 
 
 // for (let i = 0; i < finances.length; i++) {
