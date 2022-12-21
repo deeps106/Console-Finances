@@ -126,8 +126,14 @@ console.log(FirstTwoMonthsTotal);
 
 // In order to total up all the numbers I would need to create a loop that iterates through the finances 
 // array targetting the column index[1] and creating a function that would total up these numbers:
-// first create a variable that will display the sum total
-// 
+// first create a variable that will display the total. In this case that variable is 'sum' which is set to
+// 0.
+// The a for loop created to iterate through the finances array which only targets the numbers
+// in this case the column is index 1. Therefore finances [i][1]. I'm using console.log ("~~~~~~~~")
+// to separate the numbers iteration from the total which is expressed as console.log("Total:" + " " + "$" + sum);
+
+
+// Total
 let sum=0;
 
 for (let i = 0; i < finances.length; i++) {
@@ -138,9 +144,23 @@ for (let i = 0; i < finances.length; i++) {
     
     console.log(sum);
 }
-console.log("~~~~~~~~");
+
+
+// Output of analysis
+
+console.log ("Financial Analysis")
+console.log("------------------------------");
+
+console.log("Total Months:" + " " + finances.length);
 
 console.log("Total:" + " " + "$" + sum);
+
+console.log("Average  Change:" + " " );
+
+console.log("Greatest Increase in Profits:" + " ");
+
+console.log("Greatest Decrease in Profits:" + " ");
+
 
 
 // for (let i = 0; i < finances.length; i++) {
