@@ -94,7 +94,7 @@ Need to write a Js program that will
 2.calculate net total amount of Profit/Losses over the entire period
 3. Average changes in Profit/Losses over the entire period
 4. Greatest increase in profits (date and amount) over entire period
-5. Greatest decrease in provfits (date and amount) over entire period*/
+5. Greatest decrease in profits (date and amount) over entire period*/
 
 //Total numbe of months
 // the finances array is one that contains arrays within it. To access
@@ -111,7 +111,7 @@ let initialValue = finances[0][1];
 //the finances array you would need to index into each array and opt for finances[i][1].
 //iterate through finances array using for loop:*/
 
-for (let i = 1; i < finances.length; i++) {
+for (let i = 1; i < finances.length; i++) {// in order to work out the finances profit/loss you would need to start from the second array and add/subtract from the first array- hence i=1
     const finance = finances[i][1];
 
     console.log(finance);
@@ -119,7 +119,7 @@ for (let i = 1; i < finances.length; i++) {
     total = initialValue += finance;/* console.log("total:" + " " + total);*/
 
     changes = initialValue -= finance;// this works; console.log("Profit change:" + " " + "$" + changes);
-console.log(Math.max(finance));
+
 
 }
 //average changes in profit/losses is given by subtracting profit/losses monthly to give
@@ -152,19 +152,19 @@ https://www.youtube.com/watch?v=UxrSeTSI8z0 - shows how to sort a nested  array
 // sorting the finances array: Methods:
 
 /* 1. financesSorted = finances.sort(function (a, b) {
-    return a[1] - b[1];
+    return a[1] - b[1];//syntax will sort greatest to least
 });
 console.log(financesSorted1);*///Method 1
 
-/* 2. */ financesSorted = finances.sort((a, b) => a[1] - b[1]);
+/* 2. */ financesSorted = finances.sort((a, b) => a[1] - b[1]); //using the second index which is number
     console.log(financesSorted);
 
 let greatestRiseInProfits = financesSorted[85]; // console.log(finances[85]) - test ;
 
-let greatestDecreaseInProfits = financesSorted[0];
+let greatestDecreaseInProfits = financesSorted[0];//gives the key and value
 
 
-// Display in console
+// Display in console by concatenating strings and variables
 
 console.log("Financial Analysis");
 console.log("------------------");
@@ -175,3 +175,16 @@ console.log("Greatest Increase in Profits: " +
     greatestRiseInProfits[0] + " " + "(" + greatestRiseInProfits[1] + ")");
 console.log("Greatest Decrease in Profits: " +
     greatestDecreaseInProfits[0] + " " + "(" + greatestDecreaseInProfits[1] + ")");
+
+//adding an h1 to html with js
+//1.create the element
+let h1El = document.createElement("h1")
+
+//2. give the element content
+h1El.textContent = "🤑💰💵 Check your finances with 'CTRL + SHIFT + J' 💵💰🤑"
+
+//3. append the content to html
+document.body.append(h1El)
+
+//4. css style the h1
+h1El.setAttribute("style", "text-align: center")
