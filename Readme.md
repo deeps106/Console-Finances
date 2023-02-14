@@ -39,13 +39,13 @@ Some of the methods not used in the bootcamp and needed research were:
 5. Simplyfying lines of code by assigning variables to important parts of code that would be used repetitively.
 
 ### Understanding the index.js file
-In this file I have commented out my thinking and also some of the console.logs() I used to ensure the code was working. In addition I have added an header text to the HTML using js syntax including emojis with the process of "windows + ."
+In this file I have commented out my thinking and also some of the console.logs() I used to ensure the code was working. In addition I have added an header text to the HTML using js syntax including emojis with the process of "windows + .").
 
 ### Additions to the repo and exercise
 I have added in the test.js file to indicate how I used a simpler nested array like the finances one to understand better how to manipulate it, access items/elements. The use of array.sort() example was taken from MDN so I could see in realtime how this example worked. It enabled me to used array.sort() better and also ensure by assigning a new array name that the original array would not be permanently modified.
 
 ### Mock-up Image
 
-![Alt text](starter/images/Screenshot_20230214_125347.png)
+[png of challenge](starter/images/Screenshot_20230214_125347.png)
 
-
+[mock-up gif](starter/images/mock-up%20gif.mp4)
